@@ -17,7 +17,10 @@ data = [go.Scatter(x=df['weight'],
                     y=df['acceleration'],
                     mode='markers',
                     text=df['name'],
-                    marker=dict(size=df['displacement']/10, color=df['cylinders'], showscale=True))]
+                    marker=dict(size=df['displacement']/10,
+                                color=df['cylinders'],
+                                showscale=True)
+                    )]
         
                     
 
