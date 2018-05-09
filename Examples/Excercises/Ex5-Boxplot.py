@@ -16,15 +16,15 @@ df = pd.read_csv('../Data/abalone.csv')
 
 
 # take two random samples of different sizes:
-sample1 = [np.random.choice(df['rings'],10,replace=False)]
-sample2 = [np.random.choice(df['rings'], 25, replace=False)]
+sample1 = np.random.choice(df['rings'],100,replace=False)
+sample2 = np.random.choice(df['rings'], 150, replace=False)
 
 print(sample1)
 print(sample2)
 
 # create a data variable with two Box plots:
-data = [go.Box(y=sample1, boxpoints='all', jitter=0.3, pointpos=0, name='Sample1'),
-        go.Box(y=sample2, boxpoints='all', jitter=0.3, pointpos=0, name='Sample2')]
+data = [go.Box(y=sample1, boxpoints='all', jitter=0.75, pointpos=0, name='Sample1'),
+        go.Box(y=sample2, boxpoints='all', jitter=0.75, pointpos=0, name='Sample2')]
 # add a layout
 layout = go.Layout(title='Graph Title')
 
