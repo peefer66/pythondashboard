@@ -4,6 +4,7 @@ import pandas as pd
 import plotly.graph_objs as go
 import plotly.offline as pyo
 
+
 #create random seed
 np.random.seed(56)
 # x values - create numbers evenly spaced between 0 and 1
